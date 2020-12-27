@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>JavaScript on Steroids</title>
+</head>
+<body>
+    <div class="container-1">
+         <h2>Challenge 1: your age in days</h2>
+         <div class="flex-box-container-1">
+         
+            <div>
+              <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+         
+            <div>
+              <button class="btn btn-danger"onclick ="reset()">Reset</button>
+            </div>
+         </div> 
+         <div class="flex-box-container-1">
+            <div id="flex-box-result" ></div>
+         </div>
+    </div>  
+
+    <div class="container-2">
+           <h2>Challenge 2: Cat Generator</h2>
+
+             <button class ="btn btn-success" id="Cat-generator"onclick="generateCat()">Generate Cat</button>
+            
+
+            <div class="flex-box-container-2" id="flex-cat-gen">
+               
+            </div>
+
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Scissor ,Paper,Rock</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/asteroid_blue.png" height="150" width="150" alt=""onclick ="rpsGame(this)">
+            <img id="paper" src="https://pics.clipartpng.com/midle/Sticky_Note_PNG_Clip_Art-2367.png" height="150" width="150" alt=""onclick ="rpsGame(this)">
+            <img id="scissor" src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/School-Clipart/Transparent_Scissors_PNG_Clipart_Picture.png?m=1507172109" height="150" width="150" alt=""onclick ="rpsGame(this)">
+            
+        </div>
+    </div>
+
+    <div class="container-4">
+       <h2 id="change-my-color">Challenge 4: Change the color of all Buttons</h2>
+       <div class="flex-box-pick-color">
+           <form action="">
+             <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                  <option value="random">Random</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="reset">Reset</option>
+            </select>
+           </form>
+           <button class="btn btn-primary">Wee!</button>
+           <button class="btn btn-danger">Yahoo</button>
+           <button class="btn btn-Warning">Google!</button>
+           <button class="btn btn-success">Facebook!</button>
+       </div>
+       
+
+    </div>
+
+
+   
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
